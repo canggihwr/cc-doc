@@ -20,11 +20,11 @@ Nyenyak uses Google Cloud Platform (GCP) and Firebase to develop a system capabl
 
 - Open [Firebase](https://firebase.google.com/), go to the console, and connect it to your Google Cloud Project.
 - Activate Firebase Auth & Firebase Realtime Database.
-- Create a **Service Account** and download the `seviceAccountKey.json` file .
+- Create a **Service Account** and download the corresponding `seviceAccountKey.json` file.
 
 ## 3. Clone Project and Set Google Cloud Account
 
-- Open your preferred code editor (Visual Studio Code).
+- Open cloud shell or your preferred code editor (Visual Studio Code).
 - Clone the Nyenyak project from [Nyenyak-Backend-Repo](https://github.com/w0n0g1ren/Nyenyak/tree/BackEnd) using the command `git clone -b BackEnd https://github.com/w0n0g1ren/Nyenyak.git`.
 - Initialize a Git repository with `git init` and connect it to your Google Cloud account.
 
@@ -56,11 +56,11 @@ The Nyenyak project integrates Google Cloud Platform and Firebase Realtime Datab
 ![Nyenyak Logo](insert_link_to_your_logo_image)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status: Active](https://img.shields.io/badge/Status-Active-green.svg)](https://github.com/your_username/Nyenyak-Backend-Repo)
-[![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/your_username/Nyenyak-Backend-Repo/releases/tag/v1.0.0)
-[![Contributors: 5](https://img.shields.io/badge/Contributors-5-orange.svg)](https://github.com/your_username/Nyenyak-Backend-Repo/graphs/contributors)
+[![Status: Active](https://img.shields.io/badge/Status-Active-green.svg)](https://github.com/w0n0g1ren/Nyenyak/tree/BackEnd)
+[![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/w0n0g1ren/Nyenyak/tree/BackEnd)
+[![Contributors: 5](https://img.shields.io/badge/Contributors-5-orange.svg)](https://github.com/w0n0g1ren/Nyenyak/graphs/contributors)
 
-Nyenyak is a cloud-based system that uses machine learning to diagnose sleep disorders and provide personalized suggestions for improvement. It leverages Google Cloud Platform and Firebase services to create a scalable and reliable solution that connects users, mobile apps, backend APIs, and machine learning models.
+Nyenyak is a capstone project aim to develop a system capable of classifying sleep disorders, such as insomnia and sleep apnea, based on user data. Additionally, the system will provide actionable suggestions to enhance the sleep quality of users experiencing sleep disturbances. It uses Google Cloud Platform and Firebase services to create a scalable and reliable solution that connects users, mobile apps, backend APIs, and machine learning models.
 
 ## Table of Contents
 
@@ -68,14 +68,10 @@ Nyenyak is a cloud-based system that uses machine learning to diagnose sleep dis
   - [Table of Contents](#table-of-contents)
   - [Cloud Architecture](#cloud-architecture)
   - [Setup Google Cloud Platform](#setup-google-cloud-platform)
-  - [Download Google Cloud SDK and Run Cloud Shell in Your Code Editor](#download-google-cloud-sdk-and-run-cloud-shell-in-your-code-editor)
   - [Setup Firebase](#setup-firebase)
   - [Clone Project and Set Google Cloud Account](#clone-project-and-set-google-cloud-account)
-  - [Set Project and Deploy Application to App Engine](#set-project-and-deploy-application-to-app-engine)
-  - [REST-API](#rest-api)
-  - [Testing](#testing)
-  - [Contributing](#contributing)
-  - [Issues and Features](#issues-and-features)
+  - [Set Project and Deploy Application to App Engine and Cloud Run](#set-project-and-deploy-application)
+  - [API Documentation](#rest-api)
   - [License](#license)
 
 ## Cloud Architecture
@@ -88,43 +84,39 @@ Nyenyak is a cloud-based system that uses machine learning to diagnose sleep dis
 - Enable the following APIs:
   - App Engine API
   - Cloud Run Admin API
-  - Compute Engine API
+  - Google Container Registry API
+  - Firebase API (Management, Realtime Database, etc.)
+  - Cloud Monitoring API
   - Cloud Logging API
-  - Firebase Realtime Database API
-  - Cloud Pub/Sub API
-  - Cloud Build API
-  - Cloud Scheduler API
 
-## Download Google Cloud SDK and Run Cloud Shell in Your Code Editor
-
-- Ensure you have Git, a code editor (Visual Studio Code), and a Google Cloud Account installed.
 
 ## Setup Firebase
 
 - Open [Firebase](https://firebase.google.com/), go to the console, and connect it to your Google Cloud Project.
 - Activate Firebase Auth & Firebase Realtime Database.
-- Create a **Service Account** and download the corresponding file.
+- Create a **Service Account** and download the corresponding `seviceAccountKey.json` file.
 
 ## Clone Project and Set Google Cloud Account
 
-- Open your preferred code editor (Visual Studio Code).
-- Clone the Nyenyak project from [Nyenyak-Backend-Repo](insert_link_to_your_backend_repo) using the command `git clone https://github.com/your_username/Nyenyak-Backend-Repo.git`.
+- Open cloud shell or your preferred code editor (Visual Studio Code).
+- Clone the Nyenyak project from [Nyenyak-Backend-Repo](https://github.com/w0n0g1ren/Nyenyak/tree/BackEnd) using the command `git clone -b BackEnd https://github.com/w0n0g1ren/Nyenyak.git`.
 - Initialize a Git repository with `git init` and connect it to your Google Cloud account.
 
-## Set Project and Deploy Application to App Engine
+## Set Project and Deploy Application to App Engine and Cloud Run
 
 - In the terminal, set your project by executing `gcloud config set project your-project`.
+- Deploy both nodeJS and model API to App Engine and Cloud Run.
 - Add any additional deployment instructions specific to your project.
 
-## REST-API
+## API Documentation
 
-- For API Documentation, refer to the following link: [API Documentation](insert_link_to_your_api_documentation)
+- For API Documentation, refer to the following link: [API Documentation](https://docs.google.com/document/d/1qCDyOA_lNiGtEkrO0boCFtzEbLcFK6LTec5WuPWMv50/edit?usp=sharing)
 ![API Image](insert_link_to_your_api_image)
 
 **Additional Backend Details:**
-- Backend API is built using Node.js and Express.js to handle user authentication, diagnosis, articles, and user details.
-- Deployed backend API to App Engine for scalability and reliability.
-- A separate API for TensorFlow model, built by the ML team using Flask, is deployed to Cloud Run.
+- Backend API is built using Node Express.js to handle user authentication, diagnosis, articles, and user details.
+- We deployed the backend API to App Engine for easier scalability and reliability.
+- A separate the API for TensorFlow model, built using Flask and deployed to Cloud Run.
 - Utilize Cloud Monitoring & Logging for comprehensive resource monitoring and alerting.
 
 ## Testing
