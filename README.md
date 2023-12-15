@@ -105,7 +105,8 @@ Nyenyak is a capstone project aim to develop a system capable of classifying sle
 
 - In the terminal, set your project by executing `gcloud config set project your-project`.
 - Deploy both nodeJS and model API to App Engine and Cloud Run.
-- Add any additional deployment instructions specific to your project.
+  - Navigate to the directory of your Node.js API and execute the following command `gcloud app deploy`.
+  - Navigate to the Model API directory, build and push your docker image, then deploy the model API to Cloud Run by executing the following command `gcloud run deploy --image gcr.io/nyenyak-project-dev/nyenyak-model-api`
 
 ## API Documentation
 
