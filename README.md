@@ -8,7 +8,7 @@ The Nyenyak project aims to develop a system capable of classifying sleep disord
 
 ## Cloud Architecture
 
-![Architecture Illustration](insert_link_to_your_architecture_image)
+![Architecture Illustration](https://github.com/canggihwr/cc-doc/blob/main/infrastructure.jpg)
 
 ## 1. Setup Google Cloud Platform
 
@@ -46,7 +46,7 @@ The Nyenyak project aims to develop a system capable of classifying sleep disord
 
 ## 6. REST-API
 
-- For API Documentation, refer to the following link: [API Documentation](insert_link_to_your_api_documentation)
+- For API Documentation, refer to the following link: [API Documentation](https://docs.google.com/document/d/1qCDyOA_lNiGtEkrO0boCFtzEbLcFK6LTec5WuPWMv50/edit?usp=sharing)
 ![API Image](insert_link_to_your_api_image)
 
 **Additional Backend Details:**
@@ -91,7 +91,7 @@ Nyenyak is a cloud-based system that uses machine learning to diagnose sleep dis
 
 ## Cloud Architecture
 
-![Architecture Illustration](insert_link_to_your_architecture_image)
+![Architecture Illustration](https://github.com/canggihwr/cc-doc/blob/main/infrastructure.jpg)
 
 ## Setup Google Cloud Platform
 
