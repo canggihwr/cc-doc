@@ -41,7 +41,7 @@ Nyenyak uses Google Cloud Platform (GCP) and Firebase to develop a system capabl
 **Additional Backend Details:**
 - Backend API is built using Node Express.js to handle user authentication, diagnosis, articles, and user details.
 - We deployed the backend API to App Engine for easier scalability and reliability.
-- A separate the API for TensorFlow model, built using Flask and deployed to Cloud Run.
+- A separate API for TensorFlow model, built using Flask and deployed to Cloud Run.
 - Utilize Cloud Monitoring & Logging for comprehensive resource monitoring and alerting.
 
 ## Conclusion
@@ -106,7 +106,7 @@ Nyenyak is a capstone project aim to develop a system capable of classifying sle
 - In the terminal, set your project by executing `gcloud config set project your-project`.
 - Deploy both nodeJS and model API to App Engine and Cloud Run.
   - Navigate to the directory of your Node.js API and execute the following command `gcloud app deploy`.
-  - Navigate to the Model API directory, build and push your docker image, then deploy the model API to Cloud Run by executing the following command `gcloud run deploy --image gcr.io/nyenyak-project-dev/nyenyak-model-api`
+  - Navigate to the Model API directory, build and push your docker image, then deploy the model API to Cloud Run by running this command `gcloud run deploy --image gcr.io/nyenyak-project-dev/nyenyak-model-api`
 
 ## API Documentation
 
@@ -116,7 +116,7 @@ Nyenyak is a capstone project aim to develop a system capable of classifying sle
 **Additional Backend Details:**
 - Backend API is built using Node Express.js to handle user authentication, diagnosis, articles, and user details.
 - We deployed the backend API to App Engine for easier scalability and reliability.
-- A separate the API for TensorFlow model, built using Flask and deployed to Cloud Run.
+- A separate API for TensorFlow model, built using Flask and deployed to Cloud Run.
 - Utilize Cloud Monitoring & Logging for comprehensive resource monitoring and alerting.
 
 ## Conclusion
