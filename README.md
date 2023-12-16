@@ -59,11 +59,14 @@ The Nyenyak project integrates Google Cloud Platform and Firebase Realtime Datab
 [![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/w0n0g1ren/Nyenyak/tree/BackEnd)
 [![Contributors: 2](https://img.shields.io/badge/Contributors-2-orange.svg)](https://github.com/w0n0g1ren/Nyenyak/graphs/contributors)
 
+# Project Summary
+
 Nyenyak is a capstone project aim to develop a system capable of classifying sleep disorders, such as insomnia and sleep apnea, based on user data. Additionally, the system will provide actionable suggestions to enhance the sleep quality of users experiencing sleep disturbances. It uses Google Cloud Platform and Firebase services to create a scalable and reliable solution that connects users, mobile apps, backend APIs, and machine learning models.
 
 ## Table of Contents
 
 - [Nyenyak Cloud Computing Documentation](#nyenyak-cloud-computing-documentation)
+  - [Project Summary](#project-summary)
   - [Table of Contents](#table-of-contents)
   - [Cloud Architecture](#cloud-architecture)
   - [Setup Google Cloud Platform](#setup-google-cloud-platform)
